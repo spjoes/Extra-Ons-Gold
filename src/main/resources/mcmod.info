@@ -1,0 +1,16 @@
+[
+{
+  "modid": "pnarwhal",
+  "name": "SPJOES MOD THATS AMAZING",
+  "description": "A RANDOM MOD OF RANDOM AWESOMENESS",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["spjoes"],
+  "credits": "The Project Narwhal Development team witch it listed in Authors",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
