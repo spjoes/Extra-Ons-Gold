@@ -6,13 +6,13 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class BlockHandler {
 
-	public static Block MONITOR;
+	public static Block POP;
 	
 	public static void registerBlocks() {
-		// MONITOR = new BlockMonitor();
+		POP = new BlockPop();
 	
 		
-		// ForgeRegistries.BLOCKS.register(MONITOR);
+		ForgeRegistries.BLOCKS.register(POP);
 		
 	}
 	

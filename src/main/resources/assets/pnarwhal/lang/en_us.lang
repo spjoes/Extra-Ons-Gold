@@ -1,3 +1,7 @@
 itemGroup.pnarwhal=Project Narwhal
 
 item.walker.name=Walker
+item.vr_headset.name=VR Headset
+item.mhelmet.name=Mining Helmet
+item.ggun.name=Gravity Gun
+item.dhat.name=Drinking Hat
