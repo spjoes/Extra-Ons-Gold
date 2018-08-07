@@ -1,13 +1,13 @@
 [
 {
   "modid": "pnarwhal",
-  "name": "SPJOES MOD THATS AMAZING",
+  "name": "Project Narwhal",
   "description": "A RANDOM MOD OF RANDOM AWESOMENESS",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["spjoes"],
+  "authorList": ["Spjoes, Shazer, jakecooper732, MCvinnyq, Rac3rZer0, Tajashu"],
   "credits": "The Project Narwhal Development team witch it listed in Authors",
   "logoFile": "",
   "screenshots": [],

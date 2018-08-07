@@ -33,6 +33,10 @@ public class ClientProxy extends CommonProxy {
 		
 		this.registerModel(ItemHandler.TAB_ICON, 0, new ResourceLocation(Constants.MODID, "tab_icon"));
 		this.registerModel(ItemHandler.WALKER, 0, new ResourceLocation(Constants.MODID, "walker"));
+		this.registerModel(ItemHandler.VR, 0, new ResourceLocation(Constants.MODID, "vr_headset"));
+		this.registerModel(ItemHandler.MHELMET, 0, new ResourceLocation(Constants.MODID, "mhelmet"));
+		this.registerModel(ItemHandler.GGUN, 0, new ResourceLocation(Constants.MODID, "ggun"));
+		this.registerModel(ItemHandler.DHAT, 0, new ResourceLocation(Constants.MODID, "dhat"));
 	
 	}
 	

@@ -10,16 +10,20 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class ItemHandler {
 
-	public static Item TAB_ICON, WALKER;
+	public static Item TAB_ICON, WALKER, VR, MHELMET, GGUN, DHAT;
 	
 	public static void registerItems() {
 		TAB_ICON = new Item().setRegistryName(Constants.MODID, "tab_icon");
 		WALKER = new ItemWalker();
-		// CHAIR = createIB(BlockHandler.CHAIR);
-
-		// HDMI_CABLE = new ItemHDMICable();
+		VR = new ItemVRHeadset();
+		MHELMET = new ItemMHelmet();
+		GGUN = new ItemGravityGun();
+		DHAT = new ItemDHat();
 		
-		registerAll(TAB_ICON, WALKER);
+		
+		// CHAIR = createIB(BlockHandler.CHAIR);
+		
+		registerAll(TAB_ICON, WALKER, VR, MHELMET, GGUN, DHAT);
 	}
 	
 	private static Item createIB(Block block) {

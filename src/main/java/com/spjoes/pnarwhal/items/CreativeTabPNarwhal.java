@@ -21,6 +21,10 @@ public class CreativeTabPNarwhal extends CreativeTabs {
 			// list.add(new ItemStack(ItemHandler.MICROPHONE, 1, i));
 		}
 		list.add(new ItemStack(ItemHandler.WALKER));
+		list.add(new ItemStack(ItemHandler.VR));
+		list.add(new ItemStack(ItemHandler.MHELMET));
+		list.add(new ItemStack(ItemHandler.GGUN));
+		list.add(new ItemStack(ItemHandler.DHAT));
 		
 		for(int i = 0; i < 3; i++) {
 			// list.add(new ItemStack(ItemHandler.CONSOLE, 1, i));
