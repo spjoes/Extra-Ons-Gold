@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 public class ItemHandler {
 
-	public static Item TAB_ICON, WALKER, VR, MHELMET, GGUN, DHAT, CMASK, ITEM_POP, OJ;
+	public static Item TAB_ICON, WALKER, VR, MHELMET, GGUN, DHAT, CMASK, ITEM_POP, OJ, CNOSE;
 	
 	public static void registerItems() {
 		TAB_ICON = new Item().setRegistryName(Constants.MODID, "tab_icon");
@@ -21,11 +21,12 @@ public class ItemHandler {
 		DHAT = new ItemDHat();
 		CMASK = new ItemCMask();
 		OJ = new ItemOJ();
+		CNOSE = new ItemCNose();
 		
 		
 		ITEM_POP = createIB(BlockHandler.POP);
 		
-		registerAll(TAB_ICON, WALKER, VR, MHELMET, GGUN, DHAT, ITEM_POP, OJ);
+		registerAll(TAB_ICON, WALKER, VR, MHELMET, GGUN, DHAT, ITEM_POP, OJ, CNOSE);
 	}
 	
 	private static Item createIB(Block block) {

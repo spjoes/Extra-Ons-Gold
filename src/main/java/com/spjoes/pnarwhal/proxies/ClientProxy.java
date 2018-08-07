@@ -39,6 +39,7 @@ public class ClientProxy extends CommonProxy {
 		this.registerModel(ItemHandler.DHAT, 0, new ResourceLocation(Constants.MODID, "dhat"));
 		this.registerModel(ItemHandler.CMASK, 0, new ResourceLocation(Constants.MODID, "cmask"));
 		this.registerModel(ItemHandler.OJ, 0, new ResourceLocation(Constants.MODID, "oj"));
+		this.registerModel(ItemHandler.CNOSE, 0, new ResourceLocation(Constants.MODID, "cnose"));
 	
 	}
 	
