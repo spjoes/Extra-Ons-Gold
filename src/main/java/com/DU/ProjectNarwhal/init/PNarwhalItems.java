@@ -22,6 +22,7 @@ public class PNarwhalItems {
 //    public static final Item EASTER_EGG_ITEM;
       public static final Item THOTDOG;
       public static final Item TCAR;
+      public static final Item STYROFOAM;
 
     static {
         // EASTER_EGG_ITEM = RegistryUtils.registerItem(new Item(new Item.Settings().food(EASTER_EGG)), new Identifier(ProjectNarwhal.MOD_ID, "easter_egg_item"));
@@ -29,6 +30,7 @@ public class PNarwhalItems {
 
         THOTDOG = RegistryUtils.registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "thotdog"));
         TCAR = RegistryUtils.registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "tcar"));
+        STYROFOAM = RegistryUtils.registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam"));
     }
 
 

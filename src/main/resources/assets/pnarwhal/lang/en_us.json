@@ -3,5 +3,7 @@
   "block.pnarwhal.tlamps" : "Throwable Lamps",
   "block.pnarwhal.snes" : "SNES",
   "item.pnarwhal.thotdog" : "Throwable Hotdog",
-  "item.pnarwhal.tcar" : "Throwable Car"
+  "item.pnarwhal.tcar" : "Throwable Car",
+  "item.pnarwhal.styrofoam" : "Styrofoam",
+  "block.pnarwhal.styrofoamore" : "Styrofoam Ore"
 }
