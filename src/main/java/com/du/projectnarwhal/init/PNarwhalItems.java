@@ -1,8 +1,12 @@
 package com.du.projectnarwhal.init;
 
+import com.du.projectnarwhal.block.BlockThrowableLamps;
 import com.du.projectnarwhal.item.BaseItem;
 import com.du.projectnarwhal.ProjectNarwhal;
 
+import com.du.projectnarwhal.item.ItemBlockThrowableLamps;
+import com.du.projectnarwhal.item.ItemThrowableCar;
+import com.du.projectnarwhal.item.ItemThrowableHotdog;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -19,14 +23,17 @@ public class PNarwhalItems {
       public static final BaseItem THOTDOG;
       public static final BaseItem TCAR;
       public static final BaseItem STYROFOAM;
+      public static final BaseItem ITEMTLAMPS;
 
     static {
         // EASTER_EGG_ITEM = RegistryUtils.registerItem(new Item(new Item.Settings().food(EASTER_EGG)), new Identifier(ProjectNarwhal.MOD_ID, "easter_egg_item"));
 
 
-        THOTDOG = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "thotdog"));
-        TCAR = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "tcar"));
+        THOTDOG = registerItem(new ItemThrowableHotdog(), new Identifier(ProjectNarwhal.MOD_ID, "thotdog"));
+        TCAR = registerItem(new ItemThrowableCar(), new Identifier(ProjectNarwhal.MOD_ID, "tcar"));
         STYROFOAM = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam"));
+        ITEMTLAMPS = registerItem(new ItemBlockThrowableLamps(PNarwhalBlocks.TLAMPS), new Identifier(ProjectNarwhal.MOD_ID, "itemtlamps"));
+
     }
 
     public static <T extends Item> T registerItem(T item, Identifier name) {

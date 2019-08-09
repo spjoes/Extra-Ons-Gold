@@ -2,29 +2,34 @@ package com.du.projectnarwhal.item;
 
 
 import com.du.projectnarwhal.ProjectNarwhal;
-
-import com.du.projectnarwhal.init.PNarwhalItems;
+import com.du.projectnarwhal.block.BlockThrowableLamps;
+import net.fabricmc.fabric.api.block.FabricBlockSettings;
+import net.minecraft.block.Block;
+import net.minecraft.block.Material;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.thrown.SnowballEntity;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.SnowballItem;
-import net.minecraft.item.TridentItem;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
-import net.minecraft.stat.Stats;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 
-public class ItemThrowableCar extends BaseItem {
+public class ItemBlockThrowableLamps extends BlockItem {
 
 
 
-    public ItemThrowableCar() {
-        super(new Settings().group(ProjectNarwhal.PNARWHAL_TAB));
+    public ItemBlockThrowableLamps(Block block_1, Item.Settings item$Settings_1) {
+        super(block_1, item$Settings_1);
     }
+
+//    new ItemBlockThrowableLamps(BlockThrowableLamps, itemSettingsYouCreate);
+
+
 
     public TypedActionResult<ItemStack> use(World world_1, PlayerEntity playerEntity_1, Hand hand_1) {
         ItemStack itemStack_1 = playerEntity_1.getStackInHand(hand_1);
