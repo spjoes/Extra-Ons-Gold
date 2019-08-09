@@ -1,6 +1,7 @@
-package com.DU.ProjectNarwhal.item;
+package com.du.projectnarwhal.item;
 
-import com.DU.ProjectNarwhal.ProjectNarwhal;
+import com.du.projectnarwhal.ProjectNarwhal;
+
 import net.minecraft.item.Item;
 
 public class BaseItem extends Item {

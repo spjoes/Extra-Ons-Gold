@@ -1,9 +1,5 @@
-package com.DU.ProjectNarwhal;
+package com.du.projectnarwhal;
 
-import com.DU.ProjectNarwhal.init.PNarwhalBlocks;
-import com.DU.ProjectNarwhal.init.PNarwhalItems;
-import com.DU.ProjectNarwhal.init.*;
-import com.DU.ProjectNarwhal.world.BiomeFeatures;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
@@ -15,6 +11,9 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import com.du.projectnarwhal.init.PNarwhalBlocks;
+import com.du.projectnarwhal.init.PNarwhalItems;
 
 public class ProjectNarwhal implements ModInitializer {
 

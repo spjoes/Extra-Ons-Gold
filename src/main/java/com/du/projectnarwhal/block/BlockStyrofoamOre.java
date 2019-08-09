@@ -1,14 +1,14 @@
-package com.DU.ProjectNarwhal.block;
+package com.du.projectnarwhal.block;
 
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
+import net.minecraft.block.OreBlock;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
-import net.minecraft.block.Block;
 
-public class BlockThrowableLamps extends Block {
+public class BlockStyrofoamOre extends OreBlock {
 
-    public BlockThrowableLamps(Material materialIn) {
+    public BlockStyrofoamOre(Material materialIn) {
         super(Settings.of(materialIn));
     }
 

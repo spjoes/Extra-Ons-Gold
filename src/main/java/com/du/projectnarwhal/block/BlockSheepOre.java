@@ -1,15 +1,14 @@
-package com.DU.ProjectNarwhal.block;
+package com.du.projectnarwhal.block;
 
-import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
+import net.minecraft.block.OreBlock;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
-import net.minecraft.block.Block;
 
-public class BlockSnes extends Block {
+public class BlockSheepOre extends OreBlock {
 
-    public BlockSnes(Material materialIn) {
+    public BlockSheepOre(Material materialIn) {
         super(Settings.of(materialIn));
     }
 

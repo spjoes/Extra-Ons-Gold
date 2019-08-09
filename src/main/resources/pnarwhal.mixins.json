@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "com.DU.ProjectNarwhal.mixins",
+  "package": "com.du.projectnarwhal.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
     "MixinOverworldDimension"

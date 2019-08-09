@@ -1,6 +1,6 @@
-package com.DU.ProjectNarwhal.mixins;
+package com.du.projectnarwhal.mixins;
 
-import com.DU.ProjectNarwhal.world.BiomeFeatures;
+import com.du.projectnarwhal.world.BiomeFeatures;
 import net.minecraft.world.dimension.OverworldDimension;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

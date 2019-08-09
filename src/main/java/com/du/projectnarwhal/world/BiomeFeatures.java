@@ -1,6 +1,6 @@
-package com.DU.ProjectNarwhal.world;
+package com.du.projectnarwhal.world;
 
-import com.DU.ProjectNarwhal.init.PNarwhalBlocks;
+import com.du.projectnarwhal.init.PNarwhalBlocks;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.world.gen.GenerationStep;

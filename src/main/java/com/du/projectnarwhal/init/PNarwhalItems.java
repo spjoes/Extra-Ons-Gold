@@ -1,13 +1,9 @@
-package com.DU.ProjectNarwhal.init;
+package com.du.projectnarwhal.init;
 
-import com.DU.ProjectNarwhal.ProjectNarwhal;
-import com.DU.ProjectNarwhal.item.*;
-import net.minecraft.block.Block;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.FoodComponent;
+import com.du.projectnarwhal.item.BaseItem;
+import com.du.projectnarwhal.ProjectNarwhal;
+
 import net.minecraft.item.Item;
-import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 

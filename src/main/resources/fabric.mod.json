@@ -19,7 +19,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.DU.ProjectNarwhal.ProjectNarwhal"
+      "com.du.projectnarwhal.ProjectNarwhal"
     ]
   },
   "mixins": [

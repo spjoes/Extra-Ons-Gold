@@ -1,7 +1,11 @@
-package com.DU.ProjectNarwhal.init;
+package com.du.projectnarwhal.init;
 
-import com.DU.ProjectNarwhal.block.*;
-import com.DU.ProjectNarwhal.ProjectNarwhal;
+import com.du.projectnarwhal.ProjectNarwhal;
+import com.du.projectnarwhal.block.BlockSheepOre;
+import com.du.projectnarwhal.block.BlockSnes;
+import com.du.projectnarwhal.block.BlockStyrofoamOre;
+import com.du.projectnarwhal.block.BlockThrowableLamps;
+
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;

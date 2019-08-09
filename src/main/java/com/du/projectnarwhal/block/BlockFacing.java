@@ -1,4 +1,4 @@
-package com.DU.ProjectNarwhal.block;
+package com.du.projectnarwhal.block;
 
 
 import net.minecraft.block.Block;
