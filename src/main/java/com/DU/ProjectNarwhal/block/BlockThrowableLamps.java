@@ -1,6 +1,5 @@
 package com.DU.ProjectNarwhal.block;
 
-import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
 import net.minecraft.util.math.BlockPos;

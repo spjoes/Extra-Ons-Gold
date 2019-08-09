@@ -4,6 +4,8 @@ import com.DU.ProjectNarwhal.block.*;
 import com.DU.ProjectNarwhal.ProjectNarwhal;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -23,6 +25,7 @@ public class PNarwhalBlocks {
 
     private static <T extends Block> T register(T block, Identifier name) {
         Registry.register(Registry.BLOCK, name, block);
+        Registry.register(Registry.ITEM, name, new BlockItem(block, new Item.Settings().group(ProjectNarwhal.PNARWHAL_TAB)));
         return block;
     }
 
