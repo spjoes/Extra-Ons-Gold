@@ -1,9 +1,0 @@
-{
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "blocks/wool_colored_cyan"
-		"layer1": "blocks/wool_colored_orange",
-		"layer2": "blocks/wool_colored_lime"
-		
-    }
-}
