@@ -2,7 +2,6 @@ package com.DU.ProjectNarwhal.init;
 
 import com.DU.ProjectNarwhal.ProjectNarwhal;
 import com.DU.ProjectNarwhal.item.*;
-import io.github.vampirestudios.vampirelib.utils.registry.RegistryUtils;
 import net.minecraft.block.Block;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -10,6 +9,7 @@ import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.util.DyeColor;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class PNarwhalItems {
 
@@ -20,19 +20,22 @@ public class PNarwhalItems {
 //            .build();
 
 //    public static final Item EASTER_EGG_ITEM;
-      public static final Item THOTDOG;
-      public static final Item TCAR;
-      public static final Item STYROFOAM;
+      public static final BaseItem THOTDOG;
+      public static final BaseItem TCAR;
+      public static final BaseItem STYROFOAM;
 
     static {
         // EASTER_EGG_ITEM = RegistryUtils.registerItem(new Item(new Item.Settings().food(EASTER_EGG)), new Identifier(ProjectNarwhal.MOD_ID, "easter_egg_item"));
 
 
-        THOTDOG = RegistryUtils.registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "thotdog"));
-        TCAR = RegistryUtils.registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "tcar"));
-        STYROFOAM = RegistryUtils.registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam"));
+        THOTDOG = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "thotdog"));
+        TCAR = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "tcar"));
+        STYROFOAM = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam"));
     }
 
-
+    public static <T extends Item> T registerItem(T item, Identifier name) {
+        Registry.register(Registry.ITEM, name, item);
+        return item;
+    }
 
 }

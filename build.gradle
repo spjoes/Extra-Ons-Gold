@@ -27,7 +27,7 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}"
 	modCompile "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	modImplementation "vampirelib:VampireLib:1.0.1+1.14.4"
+	//modImplementation "vampirelib:VampireLib:1.0.1+1.14.4"
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modCompile "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
