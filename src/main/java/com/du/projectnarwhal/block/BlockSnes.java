@@ -1,5 +1,6 @@
 package com.du.projectnarwhal.block;
 
+import net.fabricmc.fabric.api.block.FabricBlockSettings;
 import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
@@ -10,7 +11,7 @@ import net.minecraft.block.Block;
 public class BlockSnes extends Block {
 
     public BlockSnes(Material materialIn) {
-        super(Settings.of(materialIn));
+        super(FabricBlockSettings.of(materialIn).build());
     }
 
     @Override

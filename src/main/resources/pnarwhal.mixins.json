@@ -3,7 +3,8 @@
   "package": "com.du.projectnarwhal.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "MixinOverworldDimension"
+    "MixinOverworldDimension",
+    "SnowballEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

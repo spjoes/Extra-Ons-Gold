@@ -1,5 +1,6 @@
 package com.du.projectnarwhal.block;
 
+import net.fabricmc.fabric.api.block.FabricBlockSettings;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
 import net.minecraft.block.OreBlock;
@@ -9,7 +10,7 @@ import net.minecraft.world.BlockView;
 public class BlockStyrofoamOre extends OreBlock {
 
     public BlockStyrofoamOre(Material materialIn) {
-        super(Settings.of(materialIn));
+        super(FabricBlockSettings.of(materialIn).build());
     }
 
     @Override
