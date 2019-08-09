@@ -3,6 +3,7 @@ package com.DU.ProjectNarwhal;
 import com.DU.ProjectNarwhal.init.PNarwhalBlocks;
 import com.DU.ProjectNarwhal.init.PNarwhalItems;
 import com.DU.ProjectNarwhal.init.*;
+import com.DU.ProjectNarwhal.world.BiomeFeatures;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
@@ -29,10 +30,10 @@ public class ProjectNarwhal implements ModInitializer {
 
     @Override
     public void onInitialize() {
-
-
         new PNarwhalBlocks();
         new PNarwhalItems();
     }
+
+
 
 }

@@ -1,11 +1,9 @@
 {
   "required": true,
-  "package": "net.fabricmc.example.mixin",
+  "package": "com.DU.ProjectNarwhal.mixins",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-  ],
-  "client": [
-    "ExampleMixin"
+    "MixinOverworldDimension"
   ],
   "injectors": {
     "defaultRequire": 1

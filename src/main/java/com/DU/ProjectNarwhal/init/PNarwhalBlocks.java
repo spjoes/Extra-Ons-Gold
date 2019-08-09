@@ -15,11 +15,13 @@ public class PNarwhalBlocks {
     public static final Block TLAMPS;
     public static final Block SNES;
     public static final Block STYROFOAM_ORE;
+    public static final Block SHEEP_ORE;
 
     static {
         TLAMPS = register(new BlockThrowableLamps(Material.ANVIL), new Identifier(ProjectNarwhal.MOD_ID, "tlamps"));
         SNES = register(new BlockSnes(Material.ANVIL), new Identifier(ProjectNarwhal.MOD_ID, "snes"));
-        STYROFOAM_ORE = register(new BlockSnes(Material.ANVIL), new Identifier(ProjectNarwhal.MOD_ID, "styrofoamore"));
+        STYROFOAM_ORE = register(new BlockStyrofoamOre(Material.ANVIL), new Identifier(ProjectNarwhal.MOD_ID, "styrofoamore"));
+        SHEEP_ORE = register(new BlockSheepOre(Material.ANVIL), new Identifier(ProjectNarwhal.MOD_ID, "sheepore"));
     }
 
     private static Block registerDevice(Block block, Identifier name) {
