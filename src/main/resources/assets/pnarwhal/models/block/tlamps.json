@@ -1,6 +1,8 @@
 {
 	"credit": "Made with Blockbench, a free, modern block model editor by JannisX11",
-	"textures": {"texture": "pnarwhal:blocks/tlamps"},
+	"textures": {
+		"particle": "pnarwhal:blocks/sheepore",
+		"texture": "pnarwhal:blocks/tlamps"},
 	"elements": [
 		{
 			"name": "cube",

@@ -48,8 +48,7 @@ public class PNarwhalItems {
         TCAR = registerItem(new ItemThrowableCar(), new Identifier(ProjectNarwhal.MOD_ID, "tcar"));
         STYROFOAM = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam"));
         // STYROFOAM_PICAXE = registerItem(new ItemStyrofoamPicaxe(PNarwhalToolMaterials.STYROFOAM, 1, -2.8F, (new Item.Settings())), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam-picaxe"));
-
-        STYROFOAM_PICAXE = registerItem(new ItemStyrofoamPicaxe(PNarwhalToolMaterials.STYROFOAM, 1, -2.8F, (new Item.Settings())), new Identifier((ProjectNarwhal.MOD_ID, "styrofoam-picaxe"));
+        STYROFOAM_PICAXE = registerItem(new ItemStyrofoamPicaxe(PNarwhalToolMaterials.STYROFOAM, 1, -2.8F, new Identifier(ProjectNarwhal.MOD_ID, "styrofoam-picaxe"));
 
         // ITEMTLAMPS = registerItem(new ItemBlockThrowableLamps(PNarwhalBlocks.TLAMPS), new Identifier(ProjectNarwhal.MOD_ID, "tlamps"));
 
