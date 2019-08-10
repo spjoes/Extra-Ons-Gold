@@ -17,8 +17,8 @@ import java.util.Random;
 
 public class ItemRockSteak extends BaseItem {
 
-    public ItemRockSteak() {
-        super(new Item.Settings().maxCount(1).group(ProjectNarwhal.PNARWHAL_TAB));
+    public ItemRockSteak(Settings settings) {
+        super(new Settings().group(ProjectNarwhal.PNARWHAL_TAB));
     }
     public ItemStack finishUsing(ItemStack itemStack_1, World world_1, LivingEntity livingEntity_1) {
 

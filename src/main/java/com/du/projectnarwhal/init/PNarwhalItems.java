@@ -1,12 +1,9 @@
 package com.du.projectnarwhal.init;
 
 import com.du.projectnarwhal.block.BlockThrowableLamps;
-import com.du.projectnarwhal.item.BaseItem;
+import com.du.projectnarwhal.item.*;
 import com.du.projectnarwhal.ProjectNarwhal;
 
-import com.du.projectnarwhal.item.ItemBlockThrowableLamps;
-import com.du.projectnarwhal.item.ItemThrowableCar;
-import com.du.projectnarwhal.item.ItemThrowableHotdog;
 import io.github.vampirestudios.vampirelib.utils.registry.RegistryUtils;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -44,7 +41,7 @@ public class PNarwhalItems {
     static {
 
         OMLET_ITEM = registerItem(new BaseItem(new Item.Settings().food(OMLET)), new Identifier(ProjectNarwhal.MOD_ID, "omlet"));
-        ROCK_STEAK_ITEM = registerItem(new BaseItem(new Item.Settings().food(ROCK_STEAK)), new Identifier(ProjectNarwhal.MOD_ID, "rocksteak"));
+        ROCK_STEAK_ITEM = registerItem(new ItemRockSteak(new Item.Settings().food(ROCK_STEAK)), new Identifier(ProjectNarwhal.MOD_ID, "rocksteak"));
 
         THOTDOG = registerItem(new ItemThrowableHotdog(), new Identifier(ProjectNarwhal.MOD_ID, "thotdog"));
         TCAR = registerItem(new ItemThrowableCar(), new Identifier(ProjectNarwhal.MOD_ID, "tcar"));
