@@ -3,18 +3,18 @@
   "pattern": [
     "###",
     " / ",
-    " / "
+    "#/#"
   ],
   "key": {
     "#": {
-      "item": "pnarwhal:styrofoam"
+      "item": "minecraft:diamond"
     },
     "/": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "pnarwhal:styrofoam-picaxe",
+    "item": "pnarwhal:future-picaxe",
     "count": 1
   },
   "group": "pnarwhal-picaxe"

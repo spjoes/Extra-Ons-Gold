@@ -15,6 +15,8 @@ public class PNarwhalItemTags {
     }, "", false, "");
     private static int latestVersion;
     public static final Tag<Item> STYROFOAM = register("styrofoam");
+    public static final Tag<Item> DIRTMATERIAL = register("dirtmaterial");
+    public static final Tag<Item> FUTURE = register("future");
 
 
     public static void setContainer(TagContainer<Item> tagContainer_1) {

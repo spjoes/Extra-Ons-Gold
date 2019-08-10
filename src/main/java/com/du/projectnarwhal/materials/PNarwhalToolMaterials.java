@@ -15,14 +15,18 @@ import net.minecraft.util.Lazy;
 
 public enum PNarwhalToolMaterials implements ToolMaterial {
 
-    STYROFOAM(0,39,1.4F,0.0F,15, () -> {
+    STYROFOAM(0,29,1.0F,0.0F,15, () -> {
         return Ingredient.fromTag(PNarwhalItemTags.STYROFOAM);
+    }),
+
+
+    FUTURE(0,29,1.0F,0.0F,15, () -> {
+        return Ingredient.fromTag(PNarwhalItemTags.FUTURE);
+    }),
+
+    DIRTMATERIAL(0, 19, 0.7F, 0.0F, 15, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Blocks.DIRT});
     });
-
-
-//    STONE(1, 131, 4.0F, 1.0F, 5, () -> {
-//        return Ingredient.ofItems(new ItemConvertible[]{Blocks.COBBLESTONE});
-//    })
 
 
     private final int miningLevel;

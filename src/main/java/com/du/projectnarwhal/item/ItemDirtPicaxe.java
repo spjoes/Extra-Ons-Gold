@@ -9,11 +9,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 
-public class ItemStyrofoamPicaxe extends PickaxeItem {
+public class ItemDirtPicaxe extends PickaxeItem {
 
 
 
-    public ItemStyrofoamPicaxe(ToolMaterial toolMaterial_1, int int_1, float float_1, Settings item$Settings_1) {
+    public ItemDirtPicaxe(ToolMaterial toolMaterial_1, int int_1, float float_1, Settings item$Settings_1) {
         super(toolMaterial_1,int_1, float_1, item$Settings_1.group(ProjectNarwhal.PNARWHAL_TAB));
 
     }

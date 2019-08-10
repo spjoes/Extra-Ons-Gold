@@ -7,14 +7,14 @@
   ],
   "key": {
     "#": {
-      "item": "pnarwhal:styrofoam"
+      "item": "minecraft:dirt"
     },
     "/": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "pnarwhal:styrofoam-picaxe",
+    "item": "pnarwhal:dirt-picaxe",
     "count": 1
   },
   "group": "pnarwhal-picaxe"

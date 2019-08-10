@@ -10,5 +10,8 @@
   "block.pnarwhal.sheepore" : "Sheep Ore",
   "block.pnarwhal.steakore" : "Steak Ore",
   "item.pnarwhal.rocksteak" : "Rock Steak",
-  "item.pnarwhal.styrofoam-picaxe" : "Styrofoam Picaxe"
+  "item.pnarwhal.styrofoam-picaxe" : "Styrofoam Pickaxe",
+  "item.pnarwhal.future-picaxe" : "Future Pickaxe",
+  "item.pnarwhal.redstone-saber" : "Redstone Saber",
+  "item.pnarwhal.dirt-picaxe" : "Dirt Pickaxe"
 }

@@ -30,26 +30,32 @@ public class PNarwhalItems {
             .build();
 
 //    public static final Item EASTER_EGG_ITEM;
-      public static BaseItem THOTDOG;
-      public static BaseItem TCAR;
-      public static BaseItem STYROFOAM;
-      public static BaseItem OMLET_ITEM;
-      public static BaseItem ROCK_STEAK_ITEM;
-      public static BaseItem STYROFOAM_PICAXE;
+      public static final BaseItem THOTDOG;
+      public static final BaseItem TCAR;
+      public static final BaseItem STYROFOAM;
+      public static final BaseItem OMLET_ITEM;
+      public static final BaseItem ROCK_STEAK_ITEM;
+      public static final ItemStyrofoamPicaxe STYROFOAM_PICAXE;
+      public static final ItemDirtPicaxe DIRT_PICAXE;
+      public static final ItemFuturePicaxe FUTURE_PICAXE;
+      public static final BaseItem REDSTONE_SABER;
       // public static Item ITEMTLAMPS;
 
 
     static {
 
+
         OMLET_ITEM = registerItem(new BaseItem(new Item.Settings().food(OMLET)), new Identifier(ProjectNarwhal.MOD_ID, "omlet"));
         ROCK_STEAK_ITEM = registerItem(new ItemRockSteak(new Item.Settings().food(ROCK_STEAK)), new Identifier(ProjectNarwhal.MOD_ID, "rocksteak"));
 
         THOTDOG = registerItem(new ItemThrowableHotdog(), new Identifier(ProjectNarwhal.MOD_ID, "thotdog"));
+        REDSTONE_SABER = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "redstone-saber"));
         TCAR = registerItem(new ItemThrowableCar(), new Identifier(ProjectNarwhal.MOD_ID, "tcar"));
         STYROFOAM = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam"));
         // STYROFOAM_PICAXE = registerItem(new ItemStyrofoamPicaxe(PNarwhalToolMaterials.STYROFOAM, 1, -2.8F, (new Item.Settings())), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam-picaxe"));
-        STYROFOAM_PICAXE = registerItem(new ItemStyrofoamPicaxe(PNarwhalToolMaterials.STYROFOAM, 1, -2.8F, new Identifier(ProjectNarwhal.MOD_ID, "styrofoam-picaxe"));
-
+        STYROFOAM_PICAXE = registerItem(new ItemStyrofoamPicaxe(PNarwhalToolMaterials.STYROFOAM, 1, -4.2F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam-picaxe"));
+        DIRT_PICAXE = registerItem(new ItemDirtPicaxe(PNarwhalToolMaterials.DIRTMATERIAL, 1, -3.8F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "dirt-picaxe"));
+        FUTURE_PICAXE = registerItem(new ItemFuturePicaxe(PNarwhalToolMaterials.FUTURE, 1, -3.8F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "future-picaxe"));
         // ITEMTLAMPS = registerItem(new ItemBlockThrowableLamps(PNarwhalBlocks.TLAMPS), new Identifier(ProjectNarwhal.MOD_ID, "tlamps"));
 
     }

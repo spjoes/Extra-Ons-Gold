@@ -6,11 +6,13 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.stat.Stats;
+import net.minecraft.text.TranslatableText;
 import net.minecraft.world.World;
 
 import java.util.Random;
@@ -18,12 +20,17 @@ import java.util.Random;
 public class ItemRockSteak extends BaseItem {
 
 
+    int infectedrate = 0;
+
     public ItemRockSteak(Settings settings) {
         super(settings);
     }
-    public ItemStack finishUsing(ItemStack itemStack_1, World world_1, LivingEntity livingEntity_1) {
+    public ItemStack finishUsing(ItemStack itemStack_1, World world_1, LivingEntity livingEntity_1, PlayerEntity playerEntity_1) {
 
         System.out.print("The effects ran");
+
+       int infectedrate =+ 25;
+       playerEntity_1.addChatMessage(new TranslatableText("Infected: " + infectedrate +"%", new Object[0]), true);
 
 
         if (!world_1.isClient) {

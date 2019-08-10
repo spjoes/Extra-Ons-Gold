@@ -1,21 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "###",
-    " / ",
+    " # ",
+    " # ",
     " / "
   ],
   "key": {
     "#": {
-      "item": "pnarwhal:styrofoam"
+      "item": "minecraft:redstone_block"
     },
     "/": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "pnarwhal:styrofoam-picaxe",
+    "item": "pnarwhal:redstone-saber",
     "count": 1
   },
-  "group": "pnarwhal-picaxe"
+  "group": "pnarwhal-tools"
 }
