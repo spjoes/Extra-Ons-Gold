@@ -30,17 +30,6 @@ public class PNarwhalItems {
 
     public static final FoodComponent ROCK_STEAK = new FoodComponent.Builder().saturationModifier(0.3F).hunger(6).snack().alwaysEdible()
 
-
-
-              .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 300, 2), 1.0F)
-              .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 300, 1), 1.0F)
-              .statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 300, 10), 1.0F)
-              .statusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 300, 10), 1.0F)
-              .statusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 300, 10), 1.0F)
-              .statusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 300, 10), 1.0F)
-              .statusEffect(new StatusEffectInstance(StatusEffects.UNLUCK, 300, 10), 1.0F)
-              .statusEffect(new StatusEffectInstance(StatusEffects.WITHER, 300, 10), 1.0F)
-
             .build();
 
 //    public static final Item EASTER_EGG_ITEM;
@@ -49,6 +38,7 @@ public class PNarwhalItems {
       public static final BaseItem STYROFOAM;
       public static final BaseItem OMLET_ITEM;
       public static final BaseItem ROCK_STEAK_ITEM;
+      public static final BaseItem STYROFOAM_PICAXE;
       // public static final BaseItem ITEMTLAMPS;
 
     static {
@@ -59,9 +49,12 @@ public class PNarwhalItems {
         THOTDOG = registerItem(new ItemThrowableHotdog(), new Identifier(ProjectNarwhal.MOD_ID, "thotdog"));
         TCAR = registerItem(new ItemThrowableCar(), new Identifier(ProjectNarwhal.MOD_ID, "tcar"));
         STYROFOAM = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam"));
+        STYROFOAM_PICAXE = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam-picaxe"));
         // ITEMTLAMPS = registerItem(new ItemBlockThrowableLamps(PNarwhalBlocks.TLAMPS), new Identifier(ProjectNarwhal.MOD_ID, "itemtlamps"));
 
     }
+
+
 
     public static <T extends Item> T registerItem(T item, Identifier name) {
         Registry.register(Registry.ITEM, name, item);
