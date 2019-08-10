@@ -3,10 +3,10 @@
   "id": "pnarwhal",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Project Narwhal",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "spjoes/DonutUnicorns"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
