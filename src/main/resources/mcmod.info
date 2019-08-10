@@ -1,0 +1,16 @@
+[
+{
+  "modid": "pnarwhal",
+  "name": "Project Narwhal",
+  "description": "A RANDOM MOD OF RANDOM AWESOMENESS",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Spjoes, Shazer, jakecooper732, MCvinnyq, Rac3rZer0, Tajashu"],
+  "credits": "The Project Narwhal Development team witch it listed in Authors",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "particle": "pnarwhal:items/steakore",
+    "all": "pnarwhal:items/steakore"
+  }
+}
