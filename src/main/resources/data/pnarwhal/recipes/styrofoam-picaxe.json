@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " / ",
+    " / "
+  ],
+  "key": {
+    "#": {
+      "item": "pnarwhal:styrofoam"
+    },
+    "/": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "pnarwhal:styrofoam-picaxe",
+    "count": 1
+  },
+  "group": "styrofoam-picaxe"
+}
