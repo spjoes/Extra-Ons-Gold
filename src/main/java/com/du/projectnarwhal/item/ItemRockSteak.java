@@ -50,7 +50,7 @@ public class ItemRockSteak extends BaseItem {
         } else if (number == 8) {
             livingEntity_1.addPotionEffect(new StatusEffectInstance(StatusEffects.WITHER));
         }
-        return null;
+        return super.finishUsing(itemStack_1, world_1, livingEntity_1);
     }
 
 }
