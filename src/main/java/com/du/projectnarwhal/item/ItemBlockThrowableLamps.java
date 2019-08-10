@@ -21,15 +21,9 @@ import net.minecraft.world.World;
 
 public class ItemBlockThrowableLamps extends BlockItem {
 
-
-
-    public ItemBlockThrowableLamps(Block block_1, Item.Settings item$Settings_1) {
-        super(block_1, item$Settings_1);
+    public ItemBlockThrowableLamps(Block block_1) {
+        super(block_1, new Settings().group(ProjectNarwhal.PNARWHAL_TAB));
     }
-
-//    new ItemBlockThrowableLamps(BlockThrowableLamps, itemSettingsYouCreate);
-
-
 
     public TypedActionResult<ItemStack> use(World world_1, PlayerEntity playerEntity_1, Hand hand_1) {
         ItemStack itemStack_1 = playerEntity_1.getStackInHand(hand_1);
