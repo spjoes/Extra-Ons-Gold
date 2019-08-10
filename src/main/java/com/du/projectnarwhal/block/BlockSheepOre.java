@@ -20,7 +20,7 @@ import java.util.Random;
 public class BlockSheepOre extends OreBlock {
 
     public BlockSheepOre(Material materialIn) {
-        super(FabricBlockSettings.of(materialIn).build());
+        super(FabricBlockSettings.of(materialIn).build().strength(1.0F, 1.0F));
     }
 
     String [] sheepcolors = {"sheepEntity_1.setColor(DyeColor.WHITE);", "sheepEntity_1.setColor(DyeColor.RED);", "sheepEntity_1.setColor(DyeColor.BLACK);", "sheepEntity_1.setColor(DyeColor.GRAY);", "sheepEntity_1.setColor(DyeColor.BROWN);", "sheepEntity_1.setColor(DyeColor.PINK);", "sheepEntity_1.setColor(DyeColor.ORANGE);", "sheepEntity_1.setColor(DyeColor.YELLOW);", "sheepEntity_1.setColor(DyeColor.CYAN);", "sheepEntity_1.setColor(DyeColor.BLUE);", "sheepEntity_1.setColor(DyeColor.PURPLE);"};

@@ -19,6 +19,8 @@ public class BiomeFeatures {
                 System.out.print("STYROFOAM ORE STATUS: COMPLETED!");
                 biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES, Biome.configureFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.Target.NATURAL_STONE, PNarwhalBlocks.SHEEP_ORE.getDefaultState(), 9), Decorator.COUNT_RANGE, new RangeDecoratorConfig(20, 0, 0, 64)));
                 System.out.print("SHEEP ORE STATUS: COMPLETED!");
+                biome.addFeature(GenerationStep.Feature.UNDERGROUND_ORES, Biome.configureFeature(Feature.ORE, new OreFeatureConfig(OreFeatureConfig.Target.NATURAL_STONE, PNarwhalBlocks.STEAK_ORE.getDefaultState(), 9), Decorator.COUNT_RANGE, new RangeDecoratorConfig(20, 0, 0, 64)));
+                System.out.print("STEAK ORE STATUS: COMPLETED!");
             }
         });
     }

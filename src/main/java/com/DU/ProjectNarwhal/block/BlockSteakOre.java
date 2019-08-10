@@ -7,9 +7,9 @@ import net.minecraft.block.OreBlock;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 
-public class BlockStyrofoamOre extends OreBlock {
+public class BlockSteakOre extends OreBlock {
 
-    public BlockStyrofoamOre(Material materialIn) {
+    public BlockSteakOre(Material materialIn) {
         super(FabricBlockSettings.of(materialIn).build().strength(1.0F, 1.0F));
     }
 

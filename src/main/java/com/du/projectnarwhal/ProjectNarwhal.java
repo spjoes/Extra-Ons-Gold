@@ -11,6 +11,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import net.minecraft.util.registry.Registry;
 
 import com.du.projectnarwhal.init.PNarwhalBlocks;
 import com.du.projectnarwhal.init.PNarwhalItems;
@@ -33,6 +34,9 @@ public class ProjectNarwhal implements ModInitializer {
         new PNarwhalItems();
     }
 
-
+//    @Override
+//    public void preInitialize() {
+//        Registry.addSmelting(new ItemStack(Items.DRAGON_EGG), new ItemStack(PNarwhalItems.OMLET_ITEM), 5.5f);
+//    }
 
 }
