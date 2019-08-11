@@ -9,6 +9,8 @@ import org.spongepowered.asm.mixin.Mixin;
 public class MixinPlayerEntity implements ThingForLater {
 
     public double infectedrate = 0;
+    public double druggedrate = 0;
+   // public double magicvillagerrate = 0;
 
     @Override
     public void setInfectedLevel(double level) {
@@ -18,4 +20,22 @@ public class MixinPlayerEntity implements ThingForLater {
     public double getInfectedLevel() {
         return this.infectedrate;
     }
+
+    @Override
+    public void setDruggedLevel(double level) {
+        this.druggedrate = level; }
+
+    @Override
+    public double getDruggedLevel() {
+        return this.druggedrate;
+    }
+
+//    @Override
+//    public void setMagicVillagerLevel(double level) {
+//        this.magicvillagerrate = level; }
+//
+//    @Override
+//    public double getMagicVillagerLevel() {
+//        return this.magicvillagerrate;
+//    }
 }

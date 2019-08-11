@@ -37,13 +37,14 @@ public class ItemRockSteak extends BaseItem {
 
         if (!world_1.isClient) {
 
-            if (livingEntity_1 instanceof PlayerEntity) {
 
+
+            if (livingEntity_1 instanceof PlayerEntity) {
 
                 ((ThingForLater)livingEntity_1).setInfectedLevel(((ThingForLater)livingEntity_1).getInfectedLevel()+25.0f);
                 ((PlayerEntity) livingEntity_1).addChatMessage(new LiteralText("Infected: " + ((ThingForLater)livingEntity_1).getInfectedLevel() +"%"), false);
 
-                if (((ThingForLater)livingEntity_1).getInfectedLevel()>100){
+                if (((ThingForLater)livingEntity_1).getInfectedLevel()==100){
                     livingEntity_1.addPotionEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 300, 2));
                 }
             }

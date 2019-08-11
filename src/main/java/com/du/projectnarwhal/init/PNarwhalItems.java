@@ -5,7 +5,6 @@ import com.du.projectnarwhal.item.*;
 import com.du.projectnarwhal.ProjectNarwhal;
 
 import com.du.projectnarwhal.materials.PNarwhalToolMaterials;
-import io.github.vampirestudios.vampirelib.utils.registry.RegistryUtils;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -29,6 +28,15 @@ public class PNarwhalItems {
 
             .build();
 
+
+    public static final FoodComponent MEDICINE = new FoodComponent.Builder().saturationModifier(0.3F).hunger(20).snack().alwaysEdible()
+
+            .build();
+
+    public static final FoodComponent PILL = new FoodComponent.Builder().saturationModifier(0.3F).hunger(10).snack().alwaysEdible()
+
+            .build();
+
 //    public static final Item EASTER_EGG_ITEM;
       public static final BaseItem THOTDOG;
       public static final BaseItem TCAR;
@@ -39,6 +47,8 @@ public class PNarwhalItems {
       public static final ItemDirtPicaxe DIRT_PICAXE;
       public static final ItemFuturePicaxe FUTURE_PICAXE;
       public static final BaseItem REDSTONE_SABER;
+      public static final BaseItem MEDICINE_ITEM;
+      public static final BaseItem PILL_ITEM;
       // public static Item ITEMTLAMPS;
 
 
@@ -47,6 +57,8 @@ public class PNarwhalItems {
 
         OMLET_ITEM = registerItem(new BaseItem(new Item.Settings().food(OMLET)), new Identifier(ProjectNarwhal.MOD_ID, "omlet"));
         ROCK_STEAK_ITEM = registerItem(new ItemRockSteak(new Item.Settings().food(ROCK_STEAK)), new Identifier(ProjectNarwhal.MOD_ID, "rocksteak"));
+        MEDICINE_ITEM = registerItem(new ItemMedicine(new Item.Settings().food(MEDICINE)), new Identifier(ProjectNarwhal.MOD_ID, "medicine"));
+        PILL_ITEM = registerItem(new ItemPill(new Item.Settings().food(PILL)), new Identifier(ProjectNarwhal.MOD_ID, "pill"));
 
         THOTDOG = registerItem(new ItemThrowableHotdog(), new Identifier(ProjectNarwhal.MOD_ID, "thotdog"));
         REDSTONE_SABER = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "redstone-saber"));

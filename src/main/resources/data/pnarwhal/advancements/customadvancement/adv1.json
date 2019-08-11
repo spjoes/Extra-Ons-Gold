@@ -1,0 +1,37 @@
+{
+    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
+    "display": {
+        "title": {
+            "text": "Healthy"
+        },
+        "description": {
+            "text": "Eat a medication item"
+        },
+        "icon": {
+            "item": "pnarwhal:medicine"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "Eat a medication item": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "item": "pnarwhal:medicine"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "Eat a medication item"
+        ]
+    ],
+    "rewards": {
+        "experience": 100
+    },
+    "parent": "adventure:root"
+}
