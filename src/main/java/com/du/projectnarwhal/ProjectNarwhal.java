@@ -33,7 +33,7 @@ public class ProjectNarwhal implements ModInitializer {
     public void onInitialize() {
         new PNarwhalBlocks();
         new PNarwhalItems();
-        new PNarwhalVillagers.init();
+        PNarwhalVillagers.init();
     }
 
 //    @Override
