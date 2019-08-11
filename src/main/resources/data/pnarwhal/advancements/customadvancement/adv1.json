@@ -8,7 +8,7 @@
             "text": "Eat a medication item"
         },
         "icon": {
-            "item": "pnarwhal:medicine"
+            "item": "minecraft:cooked_beef"
         },
         "frame": "task",
         "show_toast": true,
@@ -16,7 +16,7 @@
         "hidden": false
     },
     "criteria": {
-        "Eat a medication item": {
+        "medicine": {
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
@@ -27,11 +27,11 @@
     },
     "requirements": [
         [
-            "Eat a medication item"
+            "medicine"
         ]
     ],
     "rewards": {
         "experience": 100
     },
-    "parent": "adventure:root"
+    "parent": "customadvancement:root"
 }

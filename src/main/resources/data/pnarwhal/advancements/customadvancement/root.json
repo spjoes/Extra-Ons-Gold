@@ -8,7 +8,7 @@
             "text": "Eat some rock steak"
         },
         "icon": {
-            "item": "pnarwhal:rocksteak"
+            "item": "minecraft:cooked_beef"
         },
         "frame": "task",
         "show_toast": true,
@@ -17,7 +17,7 @@
         "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
     },
     "criteria": {
-        "Eat Rock Steak": {
+        "rocksteak": {
             "trigger": "minecraft:consume_item",
             "conditions": {
                 "item": {
@@ -32,7 +32,7 @@
     },
     "requirements": [
         [
-            "Eat Rock Steak"
+            "rocksteak"
         ]
     ],
     "rewards": {
