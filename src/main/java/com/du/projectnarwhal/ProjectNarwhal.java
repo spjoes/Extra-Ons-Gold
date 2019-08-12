@@ -1,5 +1,6 @@
 package com.du.projectnarwhal;
 
+import com.du.projectnarwhal.villager.CustomVillagerTrades;
 import com.du.projectnarwhal.villager.PNarwhalVillagers;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
@@ -34,6 +35,7 @@ public class ProjectNarwhal implements ModInitializer {
         new PNarwhalBlocks();
         new PNarwhalItems();
         PNarwhalVillagers.init();
+        CustomVillagerTrades.init();
     }
 
 //    @Override

@@ -1,37 +1,33 @@
 {
-    "__comment": "Made with TheDestruc7i0n's advancements generator: https://advancements.thedestruc7i0n.ca",
     "display": {
-        "title": {
-            "text": "Healthy"
+        "icon": {
+            "item": "minecraft:dirt"
         },
         "description": {
-            "text": "Eat a medication item"
+            "text": "Eat have some pills"
         },
-        "icon": {
-            "item": "minecraft:cooked_beef"
-        },
-        "frame": "task",
-        "show_toast": true,
-        "announce_to_chat": true,
-        "hidden": false
+        "title": "Have some pills"
     },
-    "criteria": {
-        "medicine": {
-            "trigger": "minecraft:consume_item",
-            "conditions": {
-                "item": {
-                    "item": "pnarwhal:medicine"
-                }
-            }
-        }
-    },
-    "requirements": [
-        [
-            "medicine"
-        ]
-    ],
-    "rewards": {
-        "experience": 100
-    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
+},
+
+"criteria": {
+"rocksteak": {
+"trigger": "minecraft:consume_item",
+"conditions": {
+"item": {
+"item": "pnarwhal:pill"
+}
+}
+}
+},
+"rewards": {
+"experience": 100
+}
+}
     "parent": "customadvancement:root"
 }
