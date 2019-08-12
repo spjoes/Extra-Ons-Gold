@@ -2,6 +2,7 @@ package com.du.projectnarwhal.item;
 
 
 import com.du.projectnarwhal.ProjectNarwhal;
+import com.du.projectnarwhal.gui.GuiFuturePicaxe;
 import com.google.common.collect.Lists;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
@@ -10,6 +11,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.effect.StatusEffect;
@@ -39,6 +41,13 @@ public class ItemFuturePicaxe extends PickaxeItem {
     public ItemFuturePicaxe(ToolMaterial toolMaterial_1, int int_1, float float_1, Settings item$Settings_1) {
         super(toolMaterial_1,int_1, float_1, item$Settings_1.group(ProjectNarwhal.PNARWHAL_TAB));
 
+    }
+
+    @Override
+    public TypedActionResult<ItemStack> use(World world_1, PlayerEntity playerEntity_1, Hand hand_1) {
+        MinecraftClient.getInstance().openScreen(new GuiFuturePicaxe(new TranslatableText("Future Picaxe")));
+
+        return super.use(world_1, playerEntity_1, hand_1);
     }
 
     @Override
