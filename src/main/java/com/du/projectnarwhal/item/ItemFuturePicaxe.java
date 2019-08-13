@@ -38,6 +38,7 @@ public class ItemFuturePicaxe extends PickaxeItem {
 
 
 
+
     public ItemFuturePicaxe(ToolMaterial toolMaterial_1, int int_1, float float_1, Settings item$Settings_1) {
         super(toolMaterial_1,int_1, float_1, item$Settings_1.group(ProjectNarwhal.PNARWHAL_TAB));
 
@@ -45,7 +46,10 @@ public class ItemFuturePicaxe extends PickaxeItem {
 
     @Override
     public TypedActionResult<ItemStack> use(World world_1, PlayerEntity playerEntity_1, Hand hand_1) {
-        MinecraftClient.getInstance().openScreen(new GuiFuturePicaxe(new TranslatableText("Future Picaxe")));
+
+            ContainerProviderRegistry.INSTANCE.openContainer(Identifier.tryParse("Future"), playerEntity_1, (buf)->{
+            });
+
 
         return super.use(world_1, playerEntity_1, hand_1);
     }

@@ -1,10 +1,15 @@
 package com.du.projectnarwhal.init;
 
 import com.du.projectnarwhal.block.BlockThrowableLamps;
+import com.du.projectnarwhal.gui.GuiFuturePicaxe;
+import com.du.projectnarwhal.gui.GuiGeneratorFuturePickaxe;
 import com.du.projectnarwhal.item.*;
 import com.du.projectnarwhal.ProjectNarwhal;
 
 import com.du.projectnarwhal.materials.PNarwhalToolMaterials;
+import net.fabricmc.fabric.api.client.screen.ScreenProviderRegistry;
+import net.fabricmc.fabric.api.container.ContainerProviderRegistry;
+import net.minecraft.container.BlockContext;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
@@ -69,6 +74,13 @@ public class PNarwhalItems {
         DIRT_PICAXE = registerItem(new ItemDirtPicaxe(PNarwhalToolMaterials.DIRTMATERIAL, 1, -3.8F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "dirt-picaxe"));
         FUTURE_PICAXE = registerItem(new ItemFuturePicaxe(PNarwhalToolMaterials.FUTURE, 1, -3.8F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "future-picaxe"));
         // ITEMTLAMPS = registerItem(new ItemBlockThrowableLamps(PNarwhalBlocks.TLAMPS), new Identifier(ProjectNarwhal.MOD_ID, "tlamps"));
+
+
+
+
+        ContainerProviderRegistry.INSTANCE.registerFactory(Identifier.tryParse("Future"), (syncId, id, player, buf) -> new GuiFuturePicaxe(syncId, player.inventory, BlockContext.create(player.world, buf.readBlockPos())));
+        ScreenProviderRegistry.INSTANCE.registerFactory(Identifier.tryParse("Future"), (syncId, identifier, player, buf) -> new GuiGeneratorFuturePickaxe(new GuiFuturePicaxe(syncId, player.inventory, BlockContext.create(player.world, buf.readBlockPos())), player));
+
 
     }
 
