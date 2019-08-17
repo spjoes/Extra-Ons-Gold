@@ -3,7 +3,9 @@ package com.du.projectnarwhal.item;
 
 import com.du.projectnarwhal.ProjectNarwhal;
 import com.du.projectnarwhal.gui.GuiFuturePicaxe;
+import com.du.projectnarwhal.gui.GuiGeneratorFuturePickaxe;
 import com.google.common.collect.Lists;
+import io.github.cottonmc.cotton.gui.client.ClientCottonScreen;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.fabricmc.fabric.api.container.ContainerProviderRegistry;
@@ -27,6 +29,7 @@ import net.minecraft.text.TranslatableText;
 import net.minecraft.util.*;
 import net.minecraft.world.World;
 import  net.fabricmc.loader.api.FabricLoader;
+import net.minecraft.util.ActionResult;
 
 import java.util.Iterator;
 import java.util.List;
@@ -47,11 +50,15 @@ public class ItemFuturePicaxe extends PickaxeItem {
     @Override
     public TypedActionResult<ItemStack> use(World world_1, PlayerEntity playerEntity_1, Hand hand_1) {
 
-            ContainerProviderRegistry.INSTANCE.openContainer(Identifier.tryParse("Future"), playerEntity_1, (buf)->{
-            });
 
+        if (world_1.isClient) {
+            MinecraftClient.getInstance().openScreen(new GuiGeneratorFuturePickaxe(new GuiFuturePicaxe()));
+        } else {
+            return super.use(world_1, playerEntity_1, hand_1);
+        }
 
         return super.use(world_1, playerEntity_1, hand_1);
+
     }
 
     @Override

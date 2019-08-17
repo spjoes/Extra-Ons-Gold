@@ -16,5 +16,8 @@
   "item.pnarwhal.medicine" : "Medicine Pack",
   "item.pnarwhal.pill" : "Pills",
   "item.pnarwhal.dirt-picaxe" : "Dirt Pickaxe",
-  "entity.minecraft.villager.doctor" : "Doctor"
+  "entity.minecraft.villager.doctor" : "Doctor",
+  "block.pnarwhal.htable" : "Special Table",
+  "item.pnarwhal.iis" : "Iron Infused Stick"
+
 }

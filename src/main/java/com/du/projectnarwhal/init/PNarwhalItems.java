@@ -54,7 +54,7 @@ public class PNarwhalItems {
       public static final BaseItem REDSTONE_SABER;
       public static final BaseItem MEDICINE_ITEM;
       public static final BaseItem PILL_ITEM;
-      // public static Item ITEMTLAMPS;
+      public static ItemIronInfusedStick IRON_INFUSED_STICK;
 
 
     static {
@@ -69,17 +69,12 @@ public class PNarwhalItems {
         REDSTONE_SABER = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "redstone-saber"));
         TCAR = registerItem(new ItemThrowableCar(), new Identifier(ProjectNarwhal.MOD_ID, "tcar"));
         STYROFOAM = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam"));
-        // STYROFOAM_PICAXE = registerItem(new ItemStyrofoamPicaxe(PNarwhalToolMaterials.STYROFOAM, 1, -2.8F, (new Item.Settings())), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam-picaxe"));
+        IRON_INFUSED_STICK = registerItem(new ItemIronInfusedStick(), new Identifier(ProjectNarwhal.MOD_ID, "iis"));
         STYROFOAM_PICAXE = registerItem(new ItemStyrofoamPicaxe(PNarwhalToolMaterials.STYROFOAM, 1, -4.2F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam-picaxe"));
         DIRT_PICAXE = registerItem(new ItemDirtPicaxe(PNarwhalToolMaterials.DIRTMATERIAL, 1, -3.8F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "dirt-picaxe"));
         FUTURE_PICAXE = registerItem(new ItemFuturePicaxe(PNarwhalToolMaterials.FUTURE, 1, -3.8F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "future-picaxe"));
-        // ITEMTLAMPS = registerItem(new ItemBlockThrowableLamps(PNarwhalBlocks.TLAMPS), new Identifier(ProjectNarwhal.MOD_ID, "tlamps"));
 
 
-
-
-        ContainerProviderRegistry.INSTANCE.registerFactory(Identifier.tryParse("Future"), (syncId, id, player, buf) -> new GuiFuturePicaxe(syncId, player.inventory, BlockContext.create(player.world, buf.readBlockPos())));
-        ScreenProviderRegistry.INSTANCE.registerFactory(Identifier.tryParse("Future"), (syncId, identifier, player, buf) -> new GuiGeneratorFuturePickaxe(new GuiFuturePicaxe(syncId, player.inventory, BlockContext.create(player.world, buf.readBlockPos())), player));
 
 
     }

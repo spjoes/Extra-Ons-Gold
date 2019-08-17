@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "redstone_block",
-		"1": "iron_block",
-		"2": "stone",
-		"3": "pnarwhal:redstone_blade",
-		"particle": "redstone_block"
+		"0": "block/redstone_block",
+		"1": "block/iron_block",
+		"2": "block/stone",
+		"3": "pnarwhal:items/redstone_blade",
+		"particle": "block/redstone_block"
 	},
 	"elements": [
 		{
