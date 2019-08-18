@@ -1,19 +1,6 @@
 {
     "variants": {
-        "": { "model": "pnarwhal:block/tv" }
-    },
-
-    "channel": {
-        "none": {
-            "model": "pnarwhal:tv",
-            "textures": {
-                "2": "blocks/gray_wool"
-            }
-        },
-        "awman": {
-            "textures": {
-                "2": "pnarwhal:blocks/tv/awman"
-            }
-        }
+        "channel=none": {"model": "pnarwhal:block/tv"},
+        "channel=awman": {"model": "pnarwhal:block/tv/tv_awman"}
     }
 }
