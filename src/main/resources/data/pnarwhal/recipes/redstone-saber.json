@@ -10,7 +10,7 @@
       "item": "minecraft:redstone_block"
     },
     "/": {
-      "item": "minecraft:stick"
+      "item": "pnarwhal:iis"
     }
   },
   "result": {

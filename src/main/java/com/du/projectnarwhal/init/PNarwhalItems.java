@@ -51,7 +51,7 @@ public class PNarwhalItems {
       public static final ItemStyrofoamPicaxe STYROFOAM_PICAXE;
       public static final ItemDirtPicaxe DIRT_PICAXE;
       public static final ItemFuturePicaxe FUTURE_PICAXE;
-      public static final BaseItem REDSTONE_SABER;
+      public static final ItemRedstoneSaber REDSTONE_SABER;
       public static final BaseItem MEDICINE_ITEM;
       public static final BaseItem PILL_ITEM;
       public static ItemIronInfusedStick IRON_INFUSED_STICK;
@@ -66,7 +66,7 @@ public class PNarwhalItems {
         PILL_ITEM = registerItem(new ItemPill(new Item.Settings().food(PILL)), new Identifier(ProjectNarwhal.MOD_ID, "pill"));
 
         THOTDOG = registerItem(new ItemThrowableHotdog(), new Identifier(ProjectNarwhal.MOD_ID, "thotdog"));
-        REDSTONE_SABER = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "redstone-saber"));
+        REDSTONE_SABER = registerItem(new ItemRedstoneSaber(PNarwhalToolMaterials.REDSTONEMATERIAL, 3, -2.4F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "redstone-saber"));
         TCAR = registerItem(new ItemThrowableCar(), new Identifier(ProjectNarwhal.MOD_ID, "tcar"));
         STYROFOAM = registerItem(new BaseItem(), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam"));
         IRON_INFUSED_STICK = registerItem(new ItemIronInfusedStick(), new Identifier(ProjectNarwhal.MOD_ID, "iis"));
@@ -75,6 +75,7 @@ public class PNarwhalItems {
         FUTURE_PICAXE = registerItem(new ItemFuturePicaxe(PNarwhalToolMaterials.FUTURE, 1, -3.8F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "future-picaxe"));
 
 
+        // IRON_SWORD = register((String)"iron_sword", (Item)(new SwordItem(ToolMaterials.IRON, 3, -2.4F, (new Settings()).group(ItemGroup.COMBAT))));
 
 
     }

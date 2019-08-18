@@ -19,6 +19,7 @@ public class PNarwhalBlocks {
     public static final BlockSheepOre SHEEP_ORE;
     public static final BlockSteakOre STEAK_ORE;
     public static final BlockHTable H_TABLE;
+    public static final BlockTv TV;
 
     static {
         // TLAMPS = register(new BlockThrowableLamps(Material.ANVIL), new Identifier(ProjectNarwhal.MOD_ID, "tlamps"));
@@ -27,6 +28,7 @@ public class PNarwhalBlocks {
         SHEEP_ORE = register(new BlockSheepOre(Material.ANVIL), new Identifier(ProjectNarwhal.MOD_ID, "sheepore"));
         STEAK_ORE = register(new BlockSteakOre(Material.ANVIL), new Identifier(ProjectNarwhal.MOD_ID, "steakore"));
         H_TABLE = register(new BlockHTable(Material.ANVIL), new Identifier(ProjectNarwhal.MOD_ID, "htable"));
+        TV = register(new BlockTv(Material.ANVIL), new Identifier(ProjectNarwhal.MOD_ID, "tv"));
 
         TLAMPS = new BlockThrowableLamps(Material.ANVIL);
         register(TLAMPS, new Identifier(ProjectNarwhal.MOD_ID, "tlamps"), new ItemBlockThrowableLamps(TLAMPS));

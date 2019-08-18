@@ -26,11 +26,12 @@ public enum PNarwhalToolMaterials implements ToolMaterial {
 
     DIRTMATERIAL(0, 19, 0.7F, 0.0F, 15, () -> {
         return Ingredient.ofItems(new ItemConvertible[]{Blocks.DIRT});
+    }),
+
+    REDSTONEMATERIAL(0, 19, 0.7F, 0.0F, 15, () -> {
+        return Ingredient.ofItems(new ItemConvertible[]{Blocks.REDSTONE_BLOCK});
     });
 
-//    REDSTONEMATERIAL(0, 19, 0.7F, 0.0F, 15, () -> {
-////        return Ingredient.fromTag(PNarwhalItemTags.REDSTONEMATERIAL);
-////    });
 
 
     private final int miningLevel;
