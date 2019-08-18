@@ -6,9 +6,11 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.FacingBlock;
 import net.minecraft.block.Material;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.state.StateFactory;
 import net.minecraft.state.property.EnumProperty;
 import net.minecraft.util.Hand;
 import net.minecraft.util.StringIdentifiable;
+import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
@@ -34,14 +36,19 @@ public class BlockTv extends Block {
     }
 
 
-
-    public boolean onBlockActivated(World worldIn, BlockPos pos, BlockState state, PlayerEntity playerentity_1, Hand hand, FacingBlock facing, float hitX, float hitY, float hitZ) {
-        if (playerentity_1.isSneaking()) {
-            shutdownTV(worldIn, pos);
+    @Override
+    public boolean activate(BlockState blockState_1, World world_1, BlockPos blockPos_1, PlayerEntity playerEntity_1, Hand hand_1, BlockHitResult blockHitResult_1) {
+        if (playerEntity_1.isSneaking()) {
+            shutdownTV(world_1, blockPos_1);
         } else {
-            nextChannel(worldIn, pos);
+            nextChannel(world_1, blockPos_1);
         }
         return true;
+    }
+
+    @Override
+    protected void appendProperties(StateFactory.Builder<Block, BlockState> stateFactory) {
+        stateFactory.add(CHANNEL);
     }
 
     private static void shutdownTV(World worldIn, BlockPos pos) {
