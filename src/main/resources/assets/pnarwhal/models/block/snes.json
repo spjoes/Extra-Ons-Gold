@@ -2,9 +2,7 @@
 	"credit": "Made with Blockbench",
 	"textures": {
 		"0": "pnarwhal:blocks/snes_1",
-		"1": "pnarwhal:blocks/snes_2",
-		"missing": "pnarwhal:blocks/snes_1",
-		"particle": "pnarwhal:blocks/snes_1"
+		"1": "pnarwhal:blocks/snes_2"
 	},
 	"elements": [
 		{
@@ -546,12 +544,34 @@
 			}
 		}
 	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [0, 1.5, -1],
+			"scale": [0.54, 0.54, 0.54]
+		},
+		"thirdperson_lefthand": {
+			"translation": [0, 1.5, 1],
+			"scale": [0.54, 0.54, 0.54]
+		},
+		"ground": {
+			"translation": [0, -0.25, 0],
+			"scale": [0.57, 0.57, 0.57]
+		},
+		"gui": {
+			"rotation": [19, 23, 0],
+			"translation": [-0.75, 4.25, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"fixed": {
+			"rotation": [-14, 46, -18],
+			"translation": [0, 3.5, -3.75],
+			"scale": [0.8, 0.8, 0.8]
+		}
+	},
 	"groups": [
 		{
 			"name": "group",
-			"isOpen": true,
-			"export": true,
-			"visibility": true,
+			"origin": [8, 8, 8],
 			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37]
 		}, 38, 39, 40, 41, 42, 43]
 }

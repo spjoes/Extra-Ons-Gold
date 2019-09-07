@@ -1,14 +1,10 @@
 {
   "itemGroup.pnarwhal.pnarwhal_tab" : "Project Narwhal",
-  "block.pnarwhal.tlamps" : "Throwable Lamps",
-  "block.pnarwhal.snes" : "SNES",
+
   "item.pnarwhal.thotdog" : "Throwable Hotdog",
   "item.pnarwhal.omlet" : "Omlet",
   "item.pnarwhal.tcar" : "Throwable Car",
   "item.pnarwhal.styrofoam" : "Styrofoam",
-  "block.pnarwhal.styrofoamore" : "Styrofoam Ore",
-  "block.pnarwhal.sheepore" : "Sheep Ore",
-  "block.pnarwhal.steakore" : "Steak Ore",
   "item.pnarwhal.rocksteak" : "Rock Steak",
   "item.pnarwhal.styrofoam-picaxe" : "Styrofoam Pickaxe",
   "item.pnarwhal.future-picaxe" : "Future Pickaxe",
@@ -16,9 +12,43 @@
   "item.pnarwhal.medicine" : "Medicine Pack",
   "item.pnarwhal.pill" : "Pills",
   "item.pnarwhal.dirt-picaxe" : "Dirt Pickaxe",
-  "entity.minecraft.villager.doctor" : "Doctor",
+  "item.pnarwhal.orb": "Magical Orb",
+  "item.pnarwhal.iis" : "Iron Infused Stick",
+
+  "block.pnarwhal.tlamps" : "Throwable Lamps",
+  "block.pnarwhal.snes" : "SNES",
+  "block.pnarwhal.styrofoamore" : "Styrofoam Ore",
+  "block.pnarwhal.sheepore" : "Sheep Ore",
+  "block.pnarwhal.steakore" : "Steak Ore",
   "block.pnarwhal.htable" : "Special Table",
   "block.pnarwhal.tv" : "TV",
-  "item.pnarwhal.iis" : "Iron Infused Stick"
 
+  "biome.pnarwhal.sheep_biome": "Sheep Biome",
+
+  "enchantment.pnarwhal.frost": "Frost",
+
+  "entity.minecraft.villager.doctor" : "Doctor",
+  "entity.pnarwhal.creepercow": "Creeper Cow",
+  "entity.pnarwhal.creeperpig": "Creeper Pig",
+  "entity.pnarwhal.diamondchicken": "Diamond Chicken",
+  "entity.pnarwhal.bird": "Bird",
+  "entity.pnarwhal.octopus": "Octopus",
+  "entity.pnarwhal.penguin": "Penguin",
+  "entity.pnarwhal.sealion": "Sea Lion",
+  "entity.pnarwhal.owl": "Owl",
+  "entity.pnarwhal.galaxywolf": "Galaxy Wolf",
+  "entity.pnarwhal.galaxyhorse": "Galaxy Horse",
+  "entity.pnarwhal.galaxyspider": "Galaxy Spider",
+
+  "item.pnarwhal.bird_spawn_egg": "Bird Spawn Egg",
+  "item.pnarwhal.creepercow_spawn_egg": "Creeper Cow Spawn Egg",
+  "item.pnarwhal.creeperpig_spawn_egg": "Creeper Pig Spawn Egg",
+  "item.pnarwhal.diamondchicken_spawn_egg": "Diamond Chicken Spawn Egg",
+  "item.pnarwhal.octopus_spawn_egg": "Octopus Spawn Egg",
+  "item.pnarwhal.penguin_spawn_egg": "Penguin Spawn Egg",
+  "item.pnarwhal.sealion_spawn_egg": "Sea Lion Spawn Egg",
+  "item.pnarwhal.galaxywolf_spawn_egg": "Galaxy Wolf Spawn Egg",
+  "item.pnarwhal.galaxyhorse_spawn_egg": "Galaxy Horse Spawn Egg",
+  "item.pnarwhal.galaxyspider_spawn_egg": "Galaxy Spider Spawn Egg",
+  "item.pnarwhal.owl_spawn_egg": "Owl Spawn Egg"
 }

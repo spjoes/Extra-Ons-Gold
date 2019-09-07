@@ -4,7 +4,7 @@
   "version": "${version}",
 
   "name": "Project Narwhal",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "This mod is filled to the brim with randomness. I dont even think I know what this mod is... AND IM THE CREATOR!",
   "authors": [
     "spjoes/DonutUnicorns"
   ],
@@ -27,7 +27,6 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.4.0",
-    "fabric": "*"
+    "fabricloader": ">=0.4.0"
   }
 }

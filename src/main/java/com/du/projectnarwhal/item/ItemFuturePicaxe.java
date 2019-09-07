@@ -24,6 +24,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableText;
 import net.minecraft.util.*;
@@ -52,7 +53,7 @@ public class ItemFuturePicaxe extends PickaxeItem {
 
 
         if (world_1.isClient) {
-            MinecraftClient.getInstance().openScreen(new GuiGeneratorFuturePickaxe(new GuiFuturePicaxe()));
+            MinecraftClient.getInstance().openScreen(new GuiGeneratorFuturePickaxe(new GuiFuturePicaxe(world_1, playerEntity_1)));
         } else {
             return super.use(world_1, playerEntity_1, hand_1);
         }
@@ -61,22 +62,13 @@ public class ItemFuturePicaxe extends PickaxeItem {
 
     }
 
+
+
     @Override
-    public void appendTooltip(ItemStack itemStack_1, World world_1, List<Text> list_1, TooltipContext tooltipContext_1) {
-        super.appendTooltip(itemStack_1, world_1, list_1, tooltipContext_1);
-        list_1.add((new TranslatableText("The Pickaxe Of The Future!")).formatted(Formatting.GRAY));
+    public void appendTooltip(ItemStack itemStack, World world, List<Text> tooltip, TooltipContext tooltipContext) {
+        super.appendTooltip(itemStack, world, tooltip, tooltipContext);
+        tooltip.add((new LiteralText("The Pickaxe Of The Future!")).formatted(Formatting.GRAY));
     }
-
-
-//    @Override
-//    public TypedActionResult<ItemStack> use(World world, PlayerEntity playerEntity, Hand hand) {
-//        if (FabricLoader.getInstance().getEnvironmentType() == EnvType.CLIENT) {
-//            //Open your gui here
-//
-//
-//        }
-//        return new TypedActionResult<>(ActionResult.SUCCESS, playerEntity.getStackInHand(hand));
-//    }
 
 
 

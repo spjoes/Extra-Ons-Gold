@@ -1,23 +1,12 @@
 package com.du.projectnarwhal.init;
 
-import com.du.projectnarwhal.block.BlockThrowableLamps;
-import com.du.projectnarwhal.gui.GuiFuturePicaxe;
-import com.du.projectnarwhal.gui.GuiGeneratorFuturePickaxe;
-import com.du.projectnarwhal.item.*;
 import com.du.projectnarwhal.ProjectNarwhal;
-
+import com.du.projectnarwhal.item.*;
 import com.du.projectnarwhal.materials.PNarwhalToolMaterials;
-import net.fabricmc.fabric.api.client.screen.ScreenProviderRegistry;
-import net.fabricmc.fabric.api.container.ContainerProviderRegistry;
-import net.minecraft.container.BlockContext;
-import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.*;
-import net.minecraft.util.DyeColor;
+import net.minecraft.item.FoodComponent;
+import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import java.util.Random;
 
 public class PNarwhalItems {
 
@@ -33,6 +22,10 @@ public class PNarwhalItems {
 
             .build();
 
+    public static final FoodComponent ORB = new FoodComponent.Builder().saturationModifier(0.3F).hunger(6).snack().alwaysEdible()
+
+            .build();
+
 
     public static final FoodComponent MEDICINE = new FoodComponent.Builder().saturationModifier(0.3F).hunger(20).snack().alwaysEdible()
 
@@ -42,7 +35,7 @@ public class PNarwhalItems {
 
             .build();
 
-//    public static final Item EASTER_EGG_ITEM;
+
       public static final BaseItem THOTDOG;
       public static final BaseItem TCAR;
       public static final BaseItem STYROFOAM;
@@ -50,10 +43,11 @@ public class PNarwhalItems {
       public static final BaseItem ROCK_STEAK_ITEM;
       public static final ItemStyrofoamPicaxe STYROFOAM_PICAXE;
       public static final ItemDirtPicaxe DIRT_PICAXE;
-      public static final ItemFuturePicaxe FUTURE_PICAXE;
+      // public static final ItemFuturePicaxe FUTURE_PICAXE;
       public static final ItemRedstoneSaber REDSTONE_SABER;
       public static final BaseItem MEDICINE_ITEM;
       public static final BaseItem PILL_ITEM;
+      public static final ItemOrb ORB_ITEM;
       public static ItemIronInfusedStick IRON_INFUSED_STICK;
 
 
@@ -64,6 +58,7 @@ public class PNarwhalItems {
         ROCK_STEAK_ITEM = registerItem(new ItemRockSteak(new Item.Settings().food(ROCK_STEAK)), new Identifier(ProjectNarwhal.MOD_ID, "rocksteak"));
         MEDICINE_ITEM = registerItem(new ItemMedicine(new Item.Settings().food(MEDICINE)), new Identifier(ProjectNarwhal.MOD_ID, "medicine"));
         PILL_ITEM = registerItem(new ItemPill(new Item.Settings().food(PILL)), new Identifier(ProjectNarwhal.MOD_ID, "pill"));
+        ORB_ITEM = registerItem(new ItemOrb(new Item.Settings().food(ORB).group(ProjectNarwhal.PNARWHAL_TAB)), new Identifier(ProjectNarwhal.MOD_ID, "orb"));
 
         THOTDOG = registerItem(new ItemThrowableHotdog(), new Identifier(ProjectNarwhal.MOD_ID, "thotdog"));
         REDSTONE_SABER = registerItem(new ItemRedstoneSaber(PNarwhalToolMaterials.REDSTONEMATERIAL, 3, -2.4F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "redstone-saber"));
@@ -72,7 +67,7 @@ public class PNarwhalItems {
         IRON_INFUSED_STICK = registerItem(new ItemIronInfusedStick(), new Identifier(ProjectNarwhal.MOD_ID, "iis"));
         STYROFOAM_PICAXE = registerItem(new ItemStyrofoamPicaxe(PNarwhalToolMaterials.STYROFOAM, 1, -4.2F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "styrofoam-picaxe"));
         DIRT_PICAXE = registerItem(new ItemDirtPicaxe(PNarwhalToolMaterials.DIRTMATERIAL, 1, -3.8F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "dirt-picaxe"));
-        FUTURE_PICAXE = registerItem(new ItemFuturePicaxe(PNarwhalToolMaterials.FUTURE, 1, -3.8F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "future-picaxe"));
+       // FUTURE_PICAXE = registerItem(new ItemFuturePicaxe(PNarwhalToolMaterials.FUTURE, 1, -3.8F, new Item.Settings()), new Identifier(ProjectNarwhal.MOD_ID, "future-picaxe"));
 
 
         // IRON_SWORD = register((String)"iron_sword", (Item)(new SwordItem(ToolMaterials.IRON, 3, -2.4F, (new Settings()).group(ItemGroup.COMBAT))));

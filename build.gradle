@@ -15,28 +15,41 @@ minecraft {
 
 repositories {
 	mavenCentral()
-	mavenLocal()
+    mavenLocal()
 	maven{ url="https://maven.fabricmc.net" }
 	maven{ url="https://minecraft.curseforge.com/api/maven" }
 	maven{ url = "http://server.bbkr.space:8081/artifactory/libs-release/" }
 	maven{ url = "http://server.bbkr.space:8081/artifactory/libs-snapshot/"}
+	flatDir { dirs "libs" }
 }
 
 
 dependencies {
 	//to change the versions see the gradle.properties file
-	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "net.fabricmc:yarn:${project.yarn_mappings}"
-	modCompile "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// modImplementation "vampirelib:VampireLib:1.0.2+1.14.4"
-	modImplementation "libgui:LibGui:1.2.2"
+	minecraft "com.mojang:minecraft:19w35a"
+	mappings "net.fabricmc:yarn:19w35a+build.1"
+	modCompile "net.fabricmc:fabric-loader:0.6.1+build.165"
+	modCompile "net.fabricmc.fabric-api:fabric-api:0.3.2+build.217-1.15"
+
+	modImplementation "net.fabricmc.fabric-api:fabric-dimensions-v1:0.1.0+c834508342"
+	modImplementation "vampirelib:VampireLib:1.0.4+19w35a:build.2"
+	modImplementation "io.github.cottonmc:LibGui:1.3.2-beta.1"
 	modApi fileTree(dir: 'libs', include: '*.jar')
 	modImplementation "io.github.cottonmc:Jankson:1.0.0+j1.1.2"
+
+	modApi "dev.vatuu:tesseract:0.2"
+
+	include "vampirelib:VampireLib:1.0.4+19w35a:build.2"
+	include "io.github.cottonmc:LibGui:1.3.2-beta.1"
+	include "io.github.cottonmc:Jankson:1.0.0+j1.1.2"
+	include "net.fabricmc.fabric-api:fabric-dimensions-v1:0.1.0+c834508342"
+
 
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modCompile "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	implementation 'org.jetbrains:annotations:15.0'
 
 	//Cotton things
 //	modCompile "io.github.cottonmc:cotton-player-events:1.0.0-rc.2"

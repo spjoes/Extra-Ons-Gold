@@ -27,7 +27,7 @@ public class ItemMedicine extends BaseItem {
 
 
         if (!world_1.isClient) {
-            livingEntity_1.clearPotionEffects();
+            livingEntity_1.clearStatusEffects();
                  if (livingEntity_1 instanceof PlayerEntity) {
 
 

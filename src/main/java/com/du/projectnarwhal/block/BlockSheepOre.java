@@ -39,26 +39,10 @@ public class BlockSheepOre extends OreBlock {
 
             sheepEntity_1.playSpawnEffects(); Random r = new Random();
             int result = r.nextInt(DyeColor.values().length);
-            DyeColor ColorBeingUsed = DyeColor.WHITE;
-            switch (result){
-                case 0: ColorBeingUsed = DyeColor.BLACK; break;
-                case 1: ColorBeingUsed = DyeColor.BLUE; break;
-                case 2: ColorBeingUsed = DyeColor.BROWN; break;
-                case 3: ColorBeingUsed = DyeColor.CYAN; break;
-                case 4: ColorBeingUsed = DyeColor.GRAY; break;
-                case 5: ColorBeingUsed = DyeColor.GREEN; break;
-                case 6: ColorBeingUsed = DyeColor.LIGHT_BLUE; break;
-                case 7: ColorBeingUsed = DyeColor.LIGHT_GRAY; break;
-                case 8: ColorBeingUsed = DyeColor.LIME; break;
-                case 9: ColorBeingUsed = DyeColor.MAGENTA; break;
-                case 10: ColorBeingUsed = DyeColor.ORANGE; break;
-                case 11: ColorBeingUsed = DyeColor.PINK; break;
-                case 12: ColorBeingUsed = DyeColor.PURPLE; break;
-                case 13: ColorBeingUsed = DyeColor.RED; break;
-                case 15: ColorBeingUsed = DyeColor.YELLOW; break;
-            }
+            DyeColor colorBeingUsed = DyeColor.byId(result);
 
-            sheepEntity_1.setColor(ColorBeingUsed);
+
+            sheepEntity_1.setColor(colorBeingUsed);
 
             world_1.spawnEntity(sheepEntity_1);
 

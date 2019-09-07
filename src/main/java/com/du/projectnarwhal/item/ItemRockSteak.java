@@ -45,7 +45,7 @@ public class ItemRockSteak extends BaseItem {
                 ((PlayerEntity) livingEntity_1).addChatMessage(new LiteralText("Infected: " + ((ThingForLater)livingEntity_1).getInfectedLevel() +"%"), false);
 
                 if (((ThingForLater)livingEntity_1).getInfectedLevel()==100){
-                    livingEntity_1.addPotionEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 300, 2));
+                    livingEntity_1.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 300, 2));
                 }
             }
 
@@ -55,28 +55,28 @@ public class ItemRockSteak extends BaseItem {
             number = number + 1;
             if (number == 1) {
 
-                livingEntity_1.addPotionEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 300, 2));
+                livingEntity_1.addStatusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 300, 2));
                 // .statusEffect(new StatusEffectInstance(StatusEffects.NAUSEA, 300, 2), 1.0F);
             } else if (number == 2) {
 
-                livingEntity_1.addPotionEffect(new StatusEffectInstance(StatusEffects.POISON, 300, 2));
+                livingEntity_1.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 300, 2));
                 // .statusEffect(new StatusEffectInstance(StatusEffects.POISON, 300, 1), 1.0F);
             } else if (number == 3) {
-                livingEntity_1.addPotionEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 300, 2));
+                livingEntity_1.addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 300, 2));
                 // .statusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 300, 10), 1.0F);
 
             } else if (number == 4) {
-                livingEntity_1.addPotionEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 300, 2));
+                livingEntity_1.addStatusEffect(new StatusEffectInstance(StatusEffects.INSTANT_DAMAGE, 300, 2));
             } else if (number == 5) {
 
-                livingEntity_1.addPotionEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 300, 2));
+                livingEntity_1.addStatusEffect(new StatusEffectInstance(StatusEffects.MINING_FATIGUE, 300, 2));
 
             } else if (number == 6) {
-                livingEntity_1.addPotionEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 300, 2));
+                livingEntity_1.addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 300, 2));
             } else if (number == 7) {
-                livingEntity_1.addPotionEffect(new StatusEffectInstance(StatusEffects.UNLUCK, 300, 2));
+                livingEntity_1.addStatusEffect(new StatusEffectInstance(StatusEffects.UNLUCK, 300, 2));
             } else if (number == 8) {
-                livingEntity_1.addPotionEffect(new StatusEffectInstance(StatusEffects.WITHER, 300, 2));
+                livingEntity_1.addStatusEffect(new StatusEffectInstance(StatusEffects.WITHER, 300, 2));
             }
         }
         return super.finishUsing(itemStack_1, world_1, livingEntity_1);

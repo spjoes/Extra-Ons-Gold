@@ -7,8 +7,8 @@
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["Spjoes, Shazer, jakecooper732, MCvinnyq, Rac3rZer0, Tajashu"],
-  "credits": "The Project Narwhal Development team witch it listed in Authors",
+  "authorList": ["Spjoes/DonutUnicorns"],
+  "credits": "Falkreon (helping with code), DBrown55 (Helping me bring things from my 1.12.2 mod to 1.14), Lotus (Help making models)",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

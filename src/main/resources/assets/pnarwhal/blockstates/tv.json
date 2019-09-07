@@ -1,6 +1,9 @@
 {
     "variants": {
         "channel=none": {"model": "pnarwhal:block/tv"},
-        "channel=awman": {"model": "pnarwhal:block/tv/tv_awman"}
+        "channel=awman": {"model": "pnarwhal:block/tv/tv_awman"},
+        "channel=pikachu": {"model": "pnarwhal:block/tv/tv_pikachu"},
+        "channel=pikachu2": {"model": "pnarwhal:block/tv/tv_pikachu2"},
+        "channel=dpikachu": {"model": "pnarwhal:block/tv/tv_dpikachu"}
     }
 }

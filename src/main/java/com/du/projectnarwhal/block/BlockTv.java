@@ -71,7 +71,10 @@ public class BlockTv extends Block {
 
     public static enum TVChannels implements StringIdentifiable {
         NONE,
-        AWMAN("awman");
+        AWMAN("awman"),
+        PIKACHU("pikachu"),
+        PIKACHU2("pikachu2"),
+        DPIKACHU("dpikachu");
 
         private String textureName;
 

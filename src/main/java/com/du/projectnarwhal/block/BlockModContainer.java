@@ -15,7 +15,7 @@ public abstract class BlockModContainer extends Block implements BlockEntityProv
 
     public void onBroken(IWorld worldIn, BlockPos pos, BlockState state) {
         super.onBroken(worldIn, pos, state);
-        worldIn.breakBlock(pos, false);
+        worldIn.breakBlock(pos, false, null);
     }
 
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "pnarwhal:block/tv",
+  "textures": {
+    "2": "pnarwhal:blocks/tv/dpikachu"
+  }
+}
