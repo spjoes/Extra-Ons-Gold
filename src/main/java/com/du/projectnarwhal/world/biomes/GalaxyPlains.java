@@ -1,7 +1,6 @@
 package com.du.projectnarwhal.world.biomes;
 
 import com.du.projectnarwhal.init.PNarwhalBlocks;
-import com.du.projectnarwhal.init.PNarwhalPlacements;
 import com.du.projectnarwhal.world.gen.feature.GalaxyTreeFeature;
 import net.minecraft.block.Blocks;
 import net.minecraft.world.biome.Biome;
@@ -28,7 +27,7 @@ public class GalaxyPlains extends Biome {
                 .depth(1.0F)
         );
 
-        this.addFeature(GenerationStep.Feature.VEGETAL_DECORATION, Biome.configureFeature(new GalaxyTreeFeature(DefaultFeatureConfig::deserialize, true), FeatureConfig.DEFAULT, PNarwhalPlacements.COUNT_UNDERGROUND_32, new CountDecoratorConfig(10)));
+        // this.addFeature(GenerationStep.Feature.VEGETAL_DECORATION, Biome.configureFeature(new GalaxyTreeFeature(DefaultFeatureConfig::deserialize, true), FeatureConfig.DEFAULT, PNarwhalPlacements.COUNT_UNDERGROUND_32, new CountDecoratorConfig(10)));
     }
 
     @Override

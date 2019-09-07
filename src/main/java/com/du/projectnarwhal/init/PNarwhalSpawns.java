@@ -127,6 +127,12 @@ public class PNarwhalSpawns {
         Biomes.MODIFIED_JUNGLE.getEntitySpawnList(PNarwhalEntitys.OWL.getCategory()).add(new Biome.SpawnEntry(PNarwhalEntitys.OWL, 3, 1, 5));
         Biomes.MODIFIED_JUNGLE.getEntitySpawnList(PNarwhalEntitys.OWL.getCategory()).add(new Biome.SpawnEntry(PNarwhalEntitys.OWL, 3, 1, 5));
 
+        
+        //The Galaxy
+        PNarwhalBiomes.GALAXY_PLAINS.getEntitySpawnList(PNarwhalEntitys.GALAXY_HORSE.getCategory()).add(new Biome.SpawnEntry(PNarwhalEntitys.GALAXY_HORSE, 3, 1, 5));
+        PNarwhalBiomes.GALAXY_PLAINS.getEntitySpawnList(PNarwhalEntitys.GALAXY_SPIDER.getCategory()).add(new Biome.SpawnEntry(PNarwhalEntitys.GALAXY_SPIDER, 3, 1, 5));
+        PNarwhalBiomes.GALAXY_PLAINS.getEntitySpawnList(PNarwhalEntitys.GALAXY_WOLF.getCategory()).add(new Biome.SpawnEntry(PNarwhalEntitys.GALAXY_WOLF, 3, 1, 5));
+        PNarwhalBiomes.GALAXY_PLAINS.getEntitySpawnList(PNarwhalEntitys.GALAXY_RABBIT.getCategory()).add(new Biome.SpawnEntry(PNarwhalEntitys.GALAXY_RABBIT, 3, 1, 5));
 
     }
 }

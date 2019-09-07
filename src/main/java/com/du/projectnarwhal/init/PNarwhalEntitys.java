@@ -4,9 +4,7 @@ import com.du.projectnarwhal.ProjectNarwhal;
 import com.du.projectnarwhal.entity.*;
 import com.du.projectnarwhal.entity.galaxy.*;
 import io.github.vampirestudios.vampirelib.utils.registry.EntityRegistryBuilder;
-import net.minecraft.entity.EntityCategory;
-import net.minecraft.entity.EntityDimensions;
-import net.minecraft.entity.EntityType;
+import net.minecraft.entity.*;
 import net.minecraft.util.Identifier;
 
 public class PNarwhalEntitys {
@@ -22,6 +20,7 @@ public class PNarwhalEntitys {
     public static final EntityType<GalaxyWolfEntity> GALAXY_WOLF;
     public static final EntityType<GalaxyHorseEntity> GALAXY_HORSE;
     public static final EntityType<GalaxySpiderEntity> GALAXY_SPIDER;
+    public static final EntityType<GalaxyRabbitEntity> GALAXY_RABBIT;
 
     static {
         CREEPER_COW = EntityRegistryBuilder.<CreeperCowEntity>createBuilder(new Identifier(ProjectNarwhal.MOD_ID, "creepercow"))
@@ -96,6 +95,13 @@ public class PNarwhalEntitys {
                 .build();
         GALAXY_SPIDER = EntityRegistryBuilder.<GalaxySpiderEntity>createBuilder(new Identifier(ProjectNarwhal.MOD_ID, "galaxyspider"))
                 .entity(GalaxySpiderEntity::new)
+                .category(EntityCategory.AMBIENT)
+                .egg(0x000000, 0x6002b4)
+                .hasEgg(true)
+                .dimensions(EntityDimensions.fixed(1.0F, 1.0F))
+                .build();
+        GALAXY_RABBIT = EntityRegistryBuilder.<GalaxyRabbitEntity>createBuilder(new Identifier(ProjectNarwhal.MOD_ID, "galaxyrabbit"))
+                .entity(GalaxyRabbitEntity::new)
                 .category(EntityCategory.AMBIENT)
                 .egg(0x000000, 0x6002b4)
                 .hasEgg(true)
